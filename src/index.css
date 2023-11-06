@@ -1,0 +1,107 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.search-box {
+  width: 100%;
+}
+
+.sidebar {
+  border-right: none;
+  border-bottom: 3px solid orangered;
+}
+
+.sidebar .form-check-input {
+  border: 1px solid orangered !important;
+}
+
+.heading {
+  display: inline-block;
+  padding: 0 0.5rem;
+  border-bottom: 3px solid orangered;
+}
+
+.card-img-box {
+  overflow: hidden;
+}
+
+.card-img {
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.card-img:hover {
+  scale: 1.2;
+}
+
+.text-orangered {
+  color: orangered;
+  margin: 0;
+}
+
+.skeleton {
+  background: linear-gradient(120deg, #b0c2ca 30%, #d8dfe1 38%, #d8dfe1 40%, #b0c2ca 48%);
+  background-size: 200% 100%;
+  background-position: 120% 0;
+  border-radius: 0.25rem;
+  animation: skeleton-loading 2s infinite;
+}
+
+@keyframes skeleton-loading {
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.skeleton-text {
+  width: 100%;
+  height: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.skeleton-text-title {
+  width: 80%;
+  margin-bottom: 0.8rem;
+  height: 2rem;
+}
+
+@media (min-width: 992px) {
+  .search-box {
+    width: 50%;
+  }
+
+  .sidebar {
+    border-right: 3px solid orangered;
+    border-bottom: none;
+  }
+
+  .sidebar .heading {
+    display: block;
+  }
+
+}
+
+@media (min-width: 400px) {
+  .d-400-inline {
+    display: inline !important;
+  }
+}
